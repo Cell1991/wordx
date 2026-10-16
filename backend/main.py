@@ -54,11 +54,13 @@ async def track_user_activity(request: Request, call_next):
     response = await call_next(request)
     return response
 
-# CORS configuration - allow any origin
+# CORS configuration - configurable via CORS_ORIGINS env variable
+origins = settings.CORS_ORIGINS
+allow_creds = False if "*" in origins else True
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=False,
+    allow_origins=origins,
+    allow_credentials=allow_creds,
     allow_methods=["*"],
     allow_headers=["*"],
 )

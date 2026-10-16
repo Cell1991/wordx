@@ -4,6 +4,12 @@ from pydantic import BaseModel
 BASE_DIR = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DEFAULT_DB_PATH = os.path.join(BASE_DIR, "crossword.db").replace("\\", "/")
 
+def _parse_cors_origins() -> list[str]:
+    raw = os.getenv("CORS_ORIGINS", "*")
+    if not raw or raw.strip() == "*":
+        return ["*"]
+    return [origin.strip() for origin in raw.split(",") if origin.strip()]
+
 class Settings(BaseModel):
     PROJECT_NAME: str = "Crossword Multiplayer Game API"
     API_V1_STR: str = "/api"
@@ -20,8 +26,8 @@ class Settings(BaseModel):
         f"sqlite:///{DEFAULT_DB_PATH}"
     )
 
-    # CORS - allow all origins so frontend on any port works
-    CORS_ORIGINS: list[str] = ["*"]
+    # CORS - allow configured origins or fallback to "*"
+    CORS_ORIGINS: list[str] = _parse_cors_origins()
     
     # Configurable Game Engine Settings
     BOARD_ROWS: int = 19
@@ -45,7 +51,9 @@ class Settings(BaseModel):
     # How long an opponent has to play SHIELD before a pending DAMAGE/SWAP effect finalizes.
     SHIELD_WINDOW_SECONDS: float = 1
     # Enables /api/debug/* (god-mode HP/rack/card edits, reveal-all racks) for solo bug testing.
-    DEBUG_MODE: bool = os.getenv("DEBUG_MODE", "true").lower() == "true"
+    DEBUG_MODE: bool = os.getenv("DEBUG_MODE", "true").lower() in ("true", "1", "yes")
+    # Optional Admin Secret Key for protecting administrative endpoints (e.g. DELETE /api/history)
+    ADMIN_SECRET_KEY: str | None = os.getenv("ADMIN_SECRET_KEY", None)
     # Auto-dissolve inactive waiting rooms after this many minutes
     ROOM_EXPIRY_MINUTES: int = 10
 

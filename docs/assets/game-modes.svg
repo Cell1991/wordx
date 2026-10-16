@@ -68,8 +68,8 @@
     <text x="18" y="26" fill="#fca5a5" font-family="'Inter', sans-serif" font-size="13" font-weight="900" letter-spacing="1">
       HP DEATHMATCH
     </text>
-    <rect x="185" y="9" width="65" height="22" rx="11" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
-    <text x="217" y="24" fill="#fee2e2" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">COMBAT</text>
+    <rect x="175" y="9" width="76" height="22" rx="11" fill="#7f1d1d" stroke="#ef4444" stroke-width="1"/>
+    <text x="213" y="23.5" fill="#fee2e2" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">COMBAT</text>
 
     <!-- Subtitle -->
     <text x="18" y="66" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14.5" font-weight="800">Survival Elimination</text>
@@ -98,7 +98,7 @@
     <g transform="translate(18, 255)">
       <rect width="225" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
       <text x="112" y="17" fill="#f87171" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">
-        STARTING HP: 10 - 1000
+        HP: 10 TO 1,000
       </text>
     </g>
   </g>
@@ -111,8 +111,8 @@
     <text x="18" y="26" fill="#6ee7b7" font-family="'Inter', sans-serif" font-size="13" font-weight="900" letter-spacing="1">
       TURN COUNT
     </text>
-    <rect x="185" y="9" width="65" height="22" rx="11" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
-    <text x="217" y="24" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">SPRINT</text>
+    <rect x="175" y="9" width="76" height="22" rx="11" fill="#064e3b" stroke="#10b981" stroke-width="1"/>
+    <text x="213" y="23.5" fill="#d1fae5" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">SPRINT</text>
 
     <!-- Subtitle -->
     <text x="18" y="66" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14.5" font-weight="800">Quick Play Score Race</text>
@@ -141,7 +141,7 @@
     <g transform="translate(18, 255)">
       <rect width="225" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
       <text x="112" y="17" fill="#34d399" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">
-        MAX ROUNDS: 7 - 500
+        ROUNDS: 7 TO 500
       </text>
     </g>
   </g>
@@ -154,8 +154,8 @@
     <text x="18" y="26" fill="#93c5fd" font-family="'Inter', sans-serif" font-size="13" font-weight="900" letter-spacing="1">
       CLASSIC SCORING
     </text>
-    <rect x="180" y="9" width="70" height="22" rx="11" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
-    <text x="215" y="24" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">LEXICON</text>
+    <rect x="175" y="9" width="76" height="22" rx="11" fill="#1e3a8a" stroke="#38bdf8" stroke-width="1"/>
+    <text x="213" y="23.5" fill="#e0f2fe" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">LEXICON</text>
 
     <!-- Subtitle -->
     <text x="18" y="66" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14.5" font-weight="800">Scrabble Standard</text>
@@ -166,9 +166,9 @@
     <!-- Lexicon Pill Demo -->
     <g transform="translate(18, 104)">
       <rect width="225" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-      <rect width="180" height="18" x="3" y="3" rx="4" fill="#0284c7" fill-opacity="0.8"/>
+      <rect width="219" height="18" x="3" y="3" rx="4" fill="#0284c7" fill-opacity="0.8"/>
       <text x="112" y="16" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" text-anchor="middle" letter-spacing="1">
-        BAG: 100 TOURNAMENT TILES
+        100 TILES IN BAG
       </text>
     </g>
 
@@ -197,8 +197,8 @@
     <text x="18" y="26" fill="#e9d5ff" font-family="'Inter', sans-serif" font-size="13" font-weight="900" letter-spacing="1">
       FANCY ARENA
     </text>
-    <rect x="185" y="9" width="65" height="22" rx="11" fill="#581c87" stroke="#c084fc" stroke-width="1"/>
-    <text x="217" y="24" fill="#fae8ff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">MAYHEM</text>
+    <rect x="175" y="9" width="76" height="22" rx="11" fill="#581c87" stroke="#c084fc" stroke-width="1"/>
+    <text x="213" y="23.5" fill="#fae8ff" font-family="'Inter', sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing="0.5">MAYHEM</text>
 
     <!-- Subtitle -->
     <text x="18" y="66" fill="#f8fafc" font-family="'Inter', sans-serif" font-size="14.5" font-weight="800">Auto-Spells Per Turn</text>
@@ -209,9 +209,9 @@
     <!-- Fancy Demo Pill -->
     <g transform="translate(18, 104)">
       <rect width="225" height="24" rx="6" fill="#1e293b" stroke="#334155" stroke-width="1"/>
-      <rect width="200" height="18" x="3" y="3" rx="4" fill="#9333ea" fill-opacity="0.8"/>
+      <rect width="219" height="18" x="3" y="3" rx="4" fill="#9333ea" fill-opacity="0.8"/>
       <text x="112" y="16" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" text-anchor="middle" letter-spacing="1">
-        AUTO CARD EVERY TURN
+        1 AUTO-SPELL / TURN
       </text>
     </g>
 
@@ -227,7 +227,7 @@
     <g transform="translate(18, 255)">
       <rect width="225" height="26" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1"/>
       <text x="112" y="17" fill="#c084fc" font-family="'Inter', sans-serif" font-size="11.5" font-weight="800" text-anchor="middle">
-        CHAOTIC POWER PLAY
+        CHAOTIC ARENA
       </text>
     </g>
   </g>

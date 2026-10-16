@@ -1,13 +1,25 @@
 from typing import Any, Optional
-from fastapi import APIRouter, Depends, HTTPException, Query
+from fastapi import APIRouter, Depends, Header, HTTPException, Query
 from sqlalchemy import select, delete, desc, func, or_
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy.orm import selectinload
 
+from app.core.config import settings
 from app.database.session import get_db
 from app.database.models import Game, GameRoom, GamePlayer, Move, BoardCell, GameTile, PlayerCard
 
 router = APIRouter(prefix="/history", tags=["history"])
+
+
+async def _verify_admin_access(x_admin_key: Optional[str] = Header(None, alias="X-Admin-Key")):
+    """
+    If ADMIN_SECRET_KEY is configured in settings/env, require a matching X-Admin-Key header
+    before performing destructive operations.
+    """
+    if settings.ADMIN_SECRET_KEY:
+        if not x_admin_key or x_admin_key != settings.ADMIN_SECRET_KEY:
+            raise HTTPException(status_code=403, detail="Admin authorization required")
+
 
 
 @router.get("")
@@ -264,7 +276,7 @@ async def get_match_replay(
     }
 
 
-@router.delete("/{game_id}")
+@router.delete("/{game_id}", dependencies=[Depends(_verify_admin_access)])
 async def delete_match_history(
     game_id: str,
     db: AsyncSession = Depends(get_db),
@@ -295,7 +307,7 @@ async def delete_match_history(
     return {"success": True, "message": f"Match {game_id} deleted from history"}
 
 
-@router.delete("")
+@router.delete("", dependencies=[Depends(_verify_admin_access)])
 async def clear_all_match_history(
     db: AsyncSession = Depends(get_db),
 ) -> dict[str, Any]:

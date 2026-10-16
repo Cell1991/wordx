@@ -161,3 +161,27 @@ async def test_replay_merges_reactive_card_into_other_players_turn():
         # The merged card event must still be attributed to the player who actually cast it.
         assert cards[0]["player_id"] == "pA"
         assert cards[0]["player_name"] == "PlayerA"
+
+
+@pytest.mark.asyncio
+async def test_admin_key_protection_for_history_deletion():
+    from app.core.config import settings
+    # Temporarily set ADMIN_SECRET_KEY
+    settings.ADMIN_SECRET_KEY = "test-super-secret-key"
+    try:
+        async with AsyncClient(transport=ASGITransport(app=app), base_url="http://test") as client:
+            # Unauthorized attempt without header should fail with 403
+            res_no_key = await client.delete("/api/history")
+            assert res_no_key.status_code == 403
+
+            # Unauthorized attempt with wrong header should fail with 403
+            res_wrong_key = await client.delete("/api/history", headers={"X-Admin-Key": "wrong-key"})
+            assert res_wrong_key.status_code == 403
+
+            # Authorized attempt with correct header should succeed
+            res_correct_key = await client.delete("/api/history", headers={"X-Admin-Key": "test-super-secret-key"})
+            assert res_correct_key.status_code == 200
+            assert res_correct_key.json()["success"] is True
+    finally:
+        settings.ADMIN_SECRET_KEY = None
+

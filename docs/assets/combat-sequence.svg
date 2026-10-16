@@ -122,8 +122,8 @@
  <!-- 6. 1.0s Shield Reaction Window Box -->
  <g transform="translate(560, 355)" filter="url(#seqShadow)">
  <rect x="0" y="0" width="560" height="110" rx="10" fill="#451a03" fill-opacity="0.3" stroke="#f59e0b" stroke-width="1.5" class="seq-pulse"/>
- <rect x="15" y="10" width="190" height="20" rx="10" fill="#78350f"/>
- <text x="110" y="24" fill="#fde68a" font-family="'Inter', sans-serif" font-size="9.5" font-weight="900" text-anchor="middle"> 1.0s SHIELD REACTION WINDOW</text>
+ <rect x="15" y="10" width="205" height="22" rx="11" fill="#78350f"/>
+    <text x="117" y="25" fill="#fde68a" font-family="'Inter', sans-serif" font-size="9" font-weight="900" text-anchor="middle" letter-spacing="0.5">1.0s SHIELD REACTION WINDOW</text>
 
  <!-- Event Pending -->
  <line x1="280" y1="45" x2="40" y2="45" stroke="#f59e0b" stroke-width="1.5"/>

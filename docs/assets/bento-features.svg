@@ -74,7 +74,7 @@
  <!-- Card Header -->
  <g transform="translate(25, 30)">
  <rect width="36" height="36" rx="8" fill="#78350f" stroke="#fbbf24" stroke-width="1.2"/>
- <text x="18" y="24" font-size="18" text-anchor="middle"></text>
+ <text x="18" y="24" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="13" font-weight="900" text-anchor="middle">60</text>
  <text x="48" y="16" fill="#fbbf24" font-family="'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="2">RENDER PIPELINE</text>
  <text x="48" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="900">60 FPS Multi-Layer Canvas Engine</text>
  </g>
@@ -119,7 +119,7 @@
  <!-- Card Header -->
  <g transform="translate(25, 30)">
  <rect width="36" height="36" rx="8" fill="#7f1d1d" stroke="#f87171" stroke-width="1.2"/>
- <text x="18" y="24" font-size="18" text-anchor="middle"></text>
+ <text x="18" y="24" fill="#f87171" font-family="'Inter', sans-serif" font-size="13" font-weight="900" text-anchor="middle">HP</text>
  <text x="48" y="16" fill="#f87171" font-family="'Inter', sans-serif" font-size="11" font-weight="900" letter-spacing="2">TACTICAL MECHANICS</text>
  <text x="48" y="32" fill="#ffffff" font-family="'Inter', sans-serif" font-size="16" font-weight="900">Real-Time HP Elimination Combat</text>
  </g>
@@ -160,7 +160,7 @@
  <!-- Card Header -->
  <g transform="translate(20, 25)">
  <rect width="32" height="32" rx="7" fill="#064e3b" stroke="#34d399" stroke-width="1.2"/>
- <text x="16" y="22" font-size="16" text-anchor="middle"></text>
+ <text x="16" y="22" fill="#34d399" font-family="'Inter', sans-serif" font-size="10.5" font-weight="900" text-anchor="middle">LEX</text>
  <text x="42" y="14" fill="#34d399" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="1.5">LEXICON ENGINE</text>
  <text x="42" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13.5" font-weight="900">3-Tier Dictionary &amp; Grimoire</text>
  </g>
@@ -189,7 +189,7 @@
  <!-- Card Header -->
  <g transform="translate(20, 25)">
  <rect width="32" height="32" rx="7" fill="#4c1d95" stroke="#a78bfa" stroke-width="1.2"/>
- <text x="16" y="22" font-size="16" text-anchor="middle"></text>
+ <text x="16" y="22" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="11" font-weight="900" text-anchor="middle">AI</text>
  <text x="42" y="14" fill="#a78bfa" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="1.5">AUTONOMOUS AI</text>
  <text x="42" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13.5" font-weight="900">Adaptive Bot Triad Engine</text>
  </g>
@@ -218,7 +218,7 @@
  <!-- Card Header -->
  <g transform="translate(20, 25)">
  <rect width="32" height="32" rx="7" fill="#0369a1" stroke="#38bdf8" stroke-width="1.2"/>
- <text x="16" y="22" font-size="16" text-anchor="middle"></text>
+ <text x="16" y="22" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="11" font-weight="900" text-anchor="middle">WS</text>
  <text x="42" y="14" fill="#38bdf8" font-family="'Inter', sans-serif" font-size="10" font-weight="900" letter-spacing="1.5">REAL-TIME STREAM</text>
  <text x="42" y="28" fill="#ffffff" font-family="'Inter', sans-serif" font-size="13.5" font-weight="900">Low-Latency WebSocket Hub</text>
  </g>
