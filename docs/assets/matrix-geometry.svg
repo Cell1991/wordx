@@ -3,45 +3,39 @@
   <defs>
     <!-- Background Gradient -->
     <radialGradient id="matrixBg" cx="50%" cy="50%" r="70%">
-      <stop offset="0%" stop-color="#0b132b" stop-opacity="0.95"/>
-      <stop offset="60%" stop-color="#070c1d" stop-opacity="0.98"/>
-      <stop offset="100%" stop-color="#020617" stop-opacity="1"/>
+      <stop offset="0%" stop-color="#091026" stop-opacity="0.98"/>
+      <stop offset="60%" stop-color="#050a1c" stop-opacity="0.99"/>
+      <stop offset="100%" stop-color="#02040e" stop-opacity="1"/>
     </radialGradient>
 
     <!-- In-Game 3L Fire Cell Gradient (Glossy Red) -->
     <linearGradient id="cell3LGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#dc2626"/>
-      <stop offset="45%" stop-color="#991b1b"/>
+      <stop offset="0%" stop-color="#ef4444"/>
+      <stop offset="35%" stop-color="#dc2626"/>
+      <stop offset="70%" stop-color="#991b1b"/>
       <stop offset="100%" stop-color="#7f1d1d"/>
     </linearGradient>
 
     <!-- In-Game 2L Earth Cell Gradient (Glossy Green) -->
     <linearGradient id="cell2LGrad" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#22c55e"/>
-      <stop offset="45%" stop-color="#16a34a"/>
+      <stop offset="35%" stop-color="#16a34a"/>
+      <stop offset="70%" stop-color="#15803d"/>
       <stop offset="100%" stop-color="#14532d"/>
     </linearGradient>
 
     <!-- In-Game Power Cell Gradient (Cyan Gem) -->
     <linearGradient id="cellPowerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#38bdf8"/>
-      <stop offset="50%" stop-color="#06b6d4"/>
+      <stop offset="0%" stop-color="#67e8f9"/>
+      <stop offset="30%" stop-color="#22d3ee"/>
+      <stop offset="70%" stop-color="#06b6d4"/>
       <stop offset="100%" stop-color="#0891b2"/>
-    </linearGradient>
-
-    <!-- In-Game Wood Tile Face Gradient (Amber / Gold Wood) -->
-    <linearGradient id="woodTileGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#fbbf24"/>
-      <stop offset="25%" stop-color="#f59e0b"/>
-      <stop offset="65%" stop-color="#d97706"/>
-      <stop offset="90%" stop-color="#b45309"/>
-      <stop offset="100%" stop-color="#78350f"/>
     </linearGradient>
 
     <!-- Top Gloss Highlight -->
     <linearGradient id="glossReflection" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.6"/>
-      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.15"/>
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.65"/>
+      <stop offset="45%" stop-color="#ffffff" stop-opacity="0.18"/>
       <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
     </linearGradient>
 
@@ -52,12 +46,12 @@
 
     <style>
       @keyframes slowGlowCenter {
-        0%, 100% { filter: drop-shadow(0 0 3px #fbbf24); }
-        50% { filter: drop-shadow(0 0 9px #f59e0b); }
+        0%, 100% { filter: drop-shadow(0 0 4px #fbbf24); }
+        50% { filter: drop-shadow(0 0 11px #f59e0b); }
       }
       @keyframes slowGlowPower {
-        0%, 100% { opacity: 0.88; filter: drop-shadow(0 0 3px #22d3ee); }
-        50% { opacity: 1.0; filter: drop-shadow(0 0 8px #38bdf8); }
+        0%, 100% { opacity: 0.92; filter: drop-shadow(0 0 5px #22d3ee); }
+        50% { opacity: 1.0; filter: drop-shadow(0 0 12px #38bdf8); }
       }
       .anim-star-center { animation: slowGlowCenter 4s ease-in-out infinite; }
       .anim-power-glow { animation: slowGlowPower 3.5s ease-in-out infinite; }
@@ -75,7 +69,7 @@
   </g>
 
   <!-- ========================================================================= -->
-  <!-- LEFT: 19x27 BOARD BLUEPRINT WITH AUTHENTIC GAME CELLS (MATCHING SCREENSHOT)-->
+  <!-- LEFT: 19x27 BOARD BLUEPRINT WITH AUTHENTIC GAME CELLS                    -->
   <!-- ========================================================================= -->
   <g transform="translate(30, 44)" filter="url(#matrixShadow)">
     <rect width="660" height="390" rx="14" fill="#070c1d" stroke="#1e293b" stroke-width="1.5"/>
@@ -92,8 +86,8 @@
     <!-- Blueprint Board Outer Frame -->
     <rect x="20" y="46" width="620" height="324" rx="8" fill="#080e22" stroke="#1e293b" stroke-width="1"/>
 
-    <!-- Golden Grid Mesh lines (In-Game look: rgba(245, 190, 72, 0.18)) -->
-    <g stroke="rgba(245, 190, 72, 0.18)" stroke-width="0.8">
+    <!-- Golden Grid Mesh lines (In-Game look: rgba(245, 190, 72, 0.20)) -->
+    <g stroke="rgba(245, 190, 72, 0.20)" stroke-width="0.8">
       <!-- Horizontal row lines -->
       <line x1="20" y1="82" x2="640" y2="82"/>
       <line x1="20" y1="118" x2="640" y2="118"/>
@@ -119,6 +113,13 @@
       <line x1="592" y1="46" x2="592" y2="370"/>
     </g>
 
+    <!-- Constellation Lines & Marks on Blueprint -->
+    <g stroke="rgba(245, 190, 72, 0.16)" stroke-width="0.8" fill="none">
+      <path d="M 211 75 L 449 75 L 592 110"/>
+      <path d="M 500 180 L 449 210 L 449 270 L 520 320"/>
+      <path d="M 240 290 L 280 320 L 360 320"/>
+    </g>
+
     <!-- Row Coordinate Labels -->
     <g font-family="'Inter', monospace" font-size="10.5" fill="#64748b" text-anchor="middle">
       <text x="38" y="68">R0</text>
@@ -131,36 +132,36 @@
     <!-- ==================== SPECIAL IN-GAME MULTIPLIER CELLS ==================== -->
     <!-- 3L FIRE CELLS (Glossy Ruby Red with italic 3L) -->
     <g>
-      <g transform="translate(315, 52)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(315, 338)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(74, 88)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(556, 88)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(74, 302)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(556, 302)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(250, 196)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
-      <g transform="translate(380, 196)"><rect width="30" height="26" rx="5" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(315, 52)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(315, 338)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(74, 88)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(556, 88)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(74, 302)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(556, 302)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(250, 196)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
+      <g transform="translate(380, 196)"><rect width="30" height="26" rx="6" fill="url(#cell3LGrad)" stroke="#f87171" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">3L</text></g>
     </g>
 
     <!-- 2L EARTH CELLS (Glossy Emerald Green with italic 2L) -->
     <g>
-      <g transform="translate(218, 124)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(412, 124)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(218, 268)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(412, 268)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(284, 160)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(346, 160)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(284, 232)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
-      <g transform="translate(346, 232)"><rect width="30" height="26" rx="5" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.2"/><rect width="30" height="12" rx="4" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(218, 124)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(412, 124)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(218, 268)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(412, 268)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(284, 160)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(346, 160)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(284, 232)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
+      <g transform="translate(346, 232)"><rect width="30" height="26" rx="6" fill="url(#cell2LGrad)" stroke="#4ade80" stroke-width="1.3"/><rect width="30" height="12" rx="5" fill="url(#glossReflection)"/><text x="15" y="18" fill="#ffffff" font-family="'Inter', sans-serif" font-size="11.5" font-weight="900" font-style="italic" text-anchor="middle">2L</text></g>
     </g>
 
-    <!-- SECRET POWER CELLS (Glowing Cyan with Yellow Lightning ⚡) -->
+    <!-- SECRET POWER CELLS (Glowing Cyan with Golden Lightning ⚡) -->
     <g class="anim-power-glow">
-      <g transform="translate(122, 52)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
-      <g transform="translate(508, 52)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
-      <g transform="translate(122, 338)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
-      <g transform="translate(508, 338)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
-      <g transform="translate(186, 88)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
-      <g transform="translate(444, 88)"><rect width="30" height="26" rx="6" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(122, 52)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(508, 52)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(122, 338)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(508, 338)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(186, 88)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
+      <g transform="translate(444, 88)"><rect width="30" height="26" rx="7" fill="url(#cellPowerGrad)" stroke="#38bdf8" stroke-width="1.5"/><rect width="30" height="12" rx="6" fill="url(#glossReflection)"/><text x="15" y="19" fill="#facc15" font-size="15" font-weight="900" text-anchor="middle">⚡</text></g>
     </g>
 
     <!-- Center Star Cell (Row 9, Col 13) -->
