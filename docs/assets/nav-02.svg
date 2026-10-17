@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 228 80" width="100%" height="100%">
+  <defs>
+    <filter id="cardGlow" x="-8%" y="-8%" width="116%" height="116%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.65"/>
+    </filter>
+  </defs>
+  <g transform="translate(4, 4)" filter="url(#cardGlow)">
+    <rect width="220" height="72" rx="10" fill="#0b1120" stroke="#10b981" stroke-width="1.5"/>
+    <rect x="0" y="0" width="220" height="25" rx="10" fill="#065f46" fill-opacity="0.35"/>
+    <text x="14" y="17" fill="#6ee7b7" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="900" letter-spacing="0.5">02. HOW TO PLAY</text>
+    <text x="14" y="45" fill="#ffffff" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="800">Combat Playbook</text>
+    <text x="14" y="61" fill="#94a3b8" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="500">6-Step Flow • Anchor Rules</text>
+  </g>
+</svg>

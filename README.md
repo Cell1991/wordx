@@ -3,39 +3,20 @@
 <!-- ========================================================================= -->
 <!-- HERO BANNER (Animated Cyberpunk SVG Header with Floating 3D Tiles)     -->
 <!-- ========================================================================= -->
-<a href="https://github.com/Cell1991/crossword-game">
+<a>
   <img src="docs/assets/hero-banner.svg" alt="Crossword Battle Arena Hero Banner" width="100%" />
 </a>
 
 <br/><br/>
 
 <!-- ========================================================================= -->
-<!-- ACADEMIC PROJECT SUBMISSION & CORE DEVELOPMENT TEAM ROSTER                -->
+<!-- DEVELOPMENT TEAM ROSTER                                                   -->
 <!-- ========================================================================= -->
-<a id="academic-project-team" href="#academic-project-team">
-  <img src="docs/assets/project-team.svg" alt="WordX Core Development Team &amp; Academic Roster" width="100%" />
+<a>
+  <img src="docs/assets/project-team.svg" alt="Development Team Roster" width="100%" />
 </a>
 
 <br/><br/>
-
-<details>
-  <summary><b>Academic Submission Details (รายชื่อสมาชิกกลุ่มผู้พัฒนาโครงงาน)</b></summary>
-  <br/>
-
-| No. | Full Name | Student ID |
-| :---: | :--- | :---: |
-| **01** | **Thanaphat Chichu** | `66312244` |
-| **02** | **Kanin Noisiri** | `66301653` |
-| **03** | **Chanadet Leecharoen** | `66311049` |
-| **04** | **Peeraphat Rungraugwong** | `66313760` |
-| **05** | **Pongsathon Hengsuwan** | `66313272` |
-| **06** | **Natthaset Sriglad** | `66311889` |
-| **07** | **Thanadet Suksomphong** | `66312206` |
-| **08** | **Rattanan Indee** | `66314392` |
-
-</details>
-
-<br/>
 
 <!-- ========================================================================= -->
 <!-- TECHNOLOGIES & STATUS BADGES MATRIX (Technologies & Status)               -->
@@ -59,48 +40,21 @@
 <br/>
 
 <!-- ========================================================================= -->
-<!-- TACTICAL NAVIGATION RADAR & SITEMAP MATRIX                            -->
+<!-- INTERACTIVE TABLE OF CONTENTS (10 Clickable SVG Section Cards)            -->
 <!-- ========================================================================= -->
-<a href="https://github.com/Cell1991/crossword-game">
-  <img src="docs/assets/nav-matrix.svg" alt="Tactical Navigation Sitemap" width="100%" />
-</a>
-
-<br/><br/>
-
 <p align="center">
-  <a href="#bento-grid-feature-matrix">
-    <img src="https://img.shields.io/badge/01_BENTO_GRID-Feature_Highlights-0284c7?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Bento Grid" />
-  </a>
-  <a href="#how-to-play-master-combat-playbook">
-    <img src="https://img.shields.io/badge/02_HOW_TO_PLAY-Master_Playbook-10b981?style=for-the-badge&amp;logo=gamepad&amp;logoColor=white" alt="How To Play" />
-  </a>
-  <a href="#game-modes--ruleset-arbitration">
-    <img src="https://img.shields.io/badge/03_GAME_MODES-4_Official_Modes-ef4444?style=for-the-badge&amp;logo=statuspage&amp;logoColor=white" alt="Game Modes" />
-  </a>
-  <a href="#tactical-power-card-deck">
-    <img src="https://img.shields.io/badge/04_POWER_CARDS-7_Tactical_Spells-f59e0b?style=for-the-badge&amp;logo=lightning&amp;logoColor=white" alt="Power Cards" />
-  </a>
-  <a href="#19x27-modular-matrix--special-squares">
-    <img src="https://img.shields.io/badge/05_19X27_MATRIX-Multipliers_%26_Bingo-06b6d4?style=for-the-badge&amp;logo=matrix&amp;logoColor=white" alt="Matrix" />
-  </a>
+  <a href="#core-features--game-highlights"><img src="docs/assets/nav-01.svg" alt="01. Core Features" width="19%" /></a>
+  <a href="#how-to-play-master-combat-playbook"><img src="docs/assets/nav-02.svg" alt="02. How To Play" width="19%" /></a>
+  <a href="#game-modes--ruleset-arbitration"><img src="docs/assets/nav-03.svg" alt="03. Game Modes" width="19%" /></a>
+  <a href="#tactical-power-card-deck"><img src="docs/assets/nav-04.svg" alt="04. Power Cards" width="19%" /></a>
+  <a href="#19x27-modular-matrix--special-squares"><img src="docs/assets/nav-05.svg" alt="05. 19x27 Matrix" width="19%" /></a>
 </p>
-
 <p align="center">
-  <a href="#real-time-multiplayer-ai-bots--spectating">
-    <img src="https://img.shields.io/badge/06_MULTIPLAYER-Sync_%26_Bots-6366f1?style=for-the-badge&amp;logo=socketdotio&amp;logoColor=white" alt="Multiplayer" />
-  </a>
-  <a href="#system-architecture">
-    <img src="https://img.shields.io/badge/07_ARCHITECTURE-FastAPI_%26_Next.js-0ea5e9?style=for-the-badge&amp;logo=fastapi&amp;logoColor=white" alt="Architecture" />
-  </a>
-  <a href="#database-entity-relationship-model">
-    <img src="https://img.shields.io/badge/08_DATABASE_ERD-SQLAlchemy_Async-a855f7?style=for-the-badge&amp;logo=postgresql&amp;logoColor=white" alt="Database ERD" />
-  </a>
-  <a href="#quick-start--installation">
-    <img src="https://img.shields.io/badge/09_QUICK_START-Docker_%26_SQLite-10b981?style=for-the-badge&amp;logo=docker&amp;logoColor=white" alt="Quick Start" />
-  </a>
-  <a href="#api--websocket-specification">
-    <img src="https://img.shields.io/badge/10_API_AND_WS-Live_Stream-f43f5e?style=for-the-badge&amp;logo=openapiinitiative&amp;logoColor=white" alt="API & WebSocket" />
-  </a>
+  <a href="#real-time-multiplayer-ai-bots--spectating"><img src="docs/assets/nav-06.svg" alt="06. Multiplayer &amp; AI" width="19%" /></a>
+  <a href="#system-architecture"><img src="docs/assets/nav-07.svg" alt="07. Architecture" width="19%" /></a>
+  <a href="#database-entity-relationship-model"><img src="docs/assets/nav-08.svg" alt="08. Database ERD" width="19%" /></a>
+  <a href="#quick-start--installation"><img src="docs/assets/nav-09.svg" alt="09. Quick Start" width="19%" /></a>
+  <a href="#api--websocket-specification"><img src="docs/assets/nav-10.svg" alt="10. API &amp; WebSocket" width="19%" /></a>
 </p>
 
 </div>
@@ -109,13 +63,13 @@
 
 ---
 
-## Bento Grid Feature Matrix
+## Core Features & Game Highlights
 
 <br/>
 
-<!-- Animated Bento Grid SVG Diagram -->
+<!-- Animated Core Features SVG Diagram -->
 <div align="center">
-  <img src="docs/assets/bento-features.svg" alt="Bento Grid Feature Highlights" width="100%" />
+  <a><img src="docs/assets/bento-features.svg" alt="Core Features &amp; Game Highlights" width="100%" /></a>
 </div>
 
 <br/>
@@ -603,31 +557,6 @@ $env:PYTHONPATH="." ; pytest tests/ -v
 # Linux / macOS:
 PYTHONPATH=. pytest tests/ -v
 ```
-
----
-
-## Contributors & Academic Development Team
-
-<br/>
-
-<!-- Animated Core Development Crew SVG -->
-<div align="center">
-  <img src="docs/assets/team-banner.svg" alt="Core Development Crew Roster" width="100%" />
-</div>
-
-<br/>
-
-<p align="center">
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/01_Thanaphat_Chichu-66312244-f59e0b?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Thanaphat Chichu 66312244" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/02_Kanin_Noisiri-66301653-f43f5e?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Kanin Noisiri 66301653" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/03_Chanadet_Leecharoen-66311049-06b6d4?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Chanadet Leecharoen 66311049" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/04_Peeraphat_Rungraugwong-66313760-10b981?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Peeraphat Rungraugwong 66313760" /></a>
-  <br/>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/05_Pongsathon_Hengsuwan-66313272-8b5cf6?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Pongsathon Hengsuwan 66313272" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/06_Natthaset_Sriglad-66311889-3b82f6?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Natthaset Sriglad 66311889" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/07_Thanadet_Suksomphong-66312206-f97316?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Thanadet Suksomphong 66312206" /></a>
-  <a href="#academic-project-team"><img src="https://img.shields.io/badge/08_Rattanan_Indee-66314392-ec4899?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Rattanan Indee 66314392" /></a>
-</p>
 
 ---
 
