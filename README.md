@@ -22,16 +22,16 @@
   <summary><b>Academic Submission Details (รายชื่อสมาชิกกลุ่มผู้พัฒนาโครงงาน)</b></summary>
   <br/>
 
-| No. | Full Name | Student ID | Core Specialization |
-| :---: | :--- | :---: | :--- |
-| **01** | **Thanaphat Chichu** | `66312244` | Project Lead &amp; System Architecture |
-| **02** | **Kanin Noisiri** | `66301653` | Core Engine &amp; Game Mechanics |
-| **03** | **Chanadet Leecharoen** | `66311049` | System Architect &amp; Performance |
-| **04** | **Peeraphat Rungraugwong** | `66313760` | Frontend &amp; HTML5 Canvas Compositor |
-| **05** | **Pongsathon Hengsuwan** | `66313272` | Gameplay Logic &amp; Lexicon Engine |
-| **06** | **Natthaset Sriglad** | `66311889` | Backend Services &amp; WebSocket Stream |
-| **07** | **Thanadet Suksomphong** | `66312206` | Database Architecture &amp; QA |
-| **08** | **Rattanan Indee** | `66314392` | UI/UX Design &amp; Graphics Pipeline |
+| No. | Full Name | Student ID |
+| :---: | :--- | :---: |
+| **01** | **Thanaphat Chichu** | `66312244` |
+| **02** | **Kanin Noisiri** | `66301653` |
+| **03** | **Chanadet Leecharoen** | `66311049` |
+| **04** | **Peeraphat Rungraugwong** | `66313760` |
+| **05** | **Pongsathon Hengsuwan** | `66313272` |
+| **06** | **Natthaset Sriglad** | `66311889` |
+| **07** | **Thanadet Suksomphong** | `66312206` |
+| **08** | **Rattanan Indee** | `66314392` |
 
 </details>
 
