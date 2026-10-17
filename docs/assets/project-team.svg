@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="teamBg" cx="50%" cy="30%" r="85%">
+      <stop offset="0%" stop-color="#0b1329" stop-opacity="0.98"/>
+      <stop offset="45%" stop-color="#060913" stop-opacity="0.99"/>
+      <stop offset="100%" stop-color="#020408" stop-opacity="1"/>
+    </radialGradient>
+
+    <!-- Outer Frame Border Gradient -->
+    <linearGradient id="outerBorderGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6"/>
+      <stop offset="25%" stop-color="#818cf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="75%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <!-- Header Text Gradient -->
+    <linearGradient id="headerTitleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+
+    <!-- Subtle Grid Overlay -->
+    <pattern id="teamGridPattern" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#334155" stroke-width="0.5" stroke-opacity="0.15"/>
+    </pattern>
+
+    <!-- Ambient Glow Filter -->
+    <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+
+    <filter id="boxShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="6" stdDeviation="12" flood-color="#000000" flood-opacity="0.7"/>
+    </filter>
+
+    <linearGradient id="borderGrad_0" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#10b981" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_5" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_6" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#f97316" stop-opacity="0.2"/>
+    </linearGradient>
+    <linearGradient id="borderGrad_7" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#1e293b" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0.2"/>
+    </linearGradient>
+
+    <style>
+      @keyframes pulseRadar {
+        0%, 100% { r: 3.5; opacity: 1; }
+        50% { r: 5.5; opacity: 0.4; }
+      }
+      .radar-pulse { animation: pulseRadar 2.5s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <!-- Base Outer Container with Luxury Border -->
+  <rect x="0" y="0" width="1200" height="480" rx="18" fill="url(#teamBg)" stroke="url(#outerBorderGrad)" stroke-width="1.5" filter="url(#boxShadow)"/>
+  
+  <!-- Subtle Grid Pattern Layer -->
+  <rect x="0" y="0" width="1200" height="480" rx="18" fill="url(#teamGridPattern)"/>
+
+  <!-- ========================================================================= -->
+  <!-- TOP HEADER & TITLE                                                        -->
+  <!-- ========================================================================= -->
+  <g transform="translate(600, 24)">
+    <!-- Top Pill Ribbon -->
+    <g transform="translate(0, 0)">
+      <rect x="-240" y="0" width="480" height="26" rx="13" fill="#0f172a" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.4"/>
+      <circle cx="-218" cy="13" r="3.5" fill="#10b981" class="radar-pulse"/>
+      <text x="0" y="17" fill="#38bdf8" font-family="'Inter', system-ui, sans-serif" font-size="10.5" font-weight="800" text-anchor="middle" letter-spacing="2.5">
+        ACADEMIC PROJECT SUBMISSION • DEVELOPMENT TEAM ROSTER
+      </text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="52" fill="url(#headerTitleGrad)" font-family="'Inter', system-ui, sans-serif" font-size="20" font-weight="900" text-anchor="middle" letter-spacing="3.5">
+      CORE RESEARCH &amp; DEVELOPMENT CREW
+    </text>
+
+    <!-- Subtitle -->
+    <text x="0" y="70" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="10.5" font-weight="700" text-anchor="middle" letter-spacing="2">
+      WORDX MULTIPLAYER ENGINE • SOFTWARE ENGINEERING CAPSTONE PROJECT
+    </text>
+  </g>
+
+  <!-- ========================================================================= -->
+  <!-- 8 MEMBER CARDS GRID                                                       -->
+  <!-- ========================================================================= -->
+    <!-- Card #01: Thanaphat Chichu -->
+    <g transform="translate(56, 110)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#f59e0b" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_0)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#f59e0b" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#fbbf24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#01</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#f59e0b" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#f59e0b" opacity="0.12"/>
+        <text x="0" y="6" fill="#fbbf24" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">TC</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Thanaphat Chichu</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#f59e0b" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#f59e0b"/>
+        <text x="98" y="16.5" fill="#fbbf24" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66312244</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">PROJECT LEAD &amp; DEV</text>
+    </g>
+
+    <!-- Card #02: Kanin Noisiri -->
+    <g transform="translate(332, 110)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#f43f5e" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_1)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#f43f5e" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#f43f5e" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#fb7185" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#02</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#f43f5e" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#f43f5e" opacity="0.12"/>
+        <text x="0" y="6" fill="#fb7185" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">KN</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Kanin Noisiri</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#f43f5e" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#f43f5e"/>
+        <text x="98" y="16.5" fill="#fb7185" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66301653</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">CORE ENGINE DEV</text>
+    </g>
+
+    <!-- Card #03: Chanadet Leecharoen -->
+    <g transform="translate(608, 110)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#06b6d4" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_2)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#06b6d4" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#06b6d4" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#38bdf8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#03</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#06b6d4" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#06b6d4" opacity="0.12"/>
+        <text x="0" y="6" fill="#38bdf8" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">CL</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Chanadet Leecharoen</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#06b6d4" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#06b6d4"/>
+        <text x="98" y="16.5" fill="#38bdf8" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66311049</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">SYSTEM ARCHITECT</text>
+    </g>
+
+    <!-- Card #04: Peeraphat Rungraugwong -->
+    <g transform="translate(884, 110)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#10b981" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_3)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#10b981" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#34d399" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#04</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#10b981" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#10b981" opacity="0.12"/>
+        <text x="0" y="6" fill="#34d399" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">PR</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Peeraphat Rungraugwong</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#10b981" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#10b981"/>
+        <text x="98" y="16.5" fill="#34d399" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66313760</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">FRONTEND &amp; CANVAS</text>
+    </g>
+
+    <!-- Card #05: Pongsathon Hengsuwan -->
+    <g transform="translate(56, 288)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#8b5cf6" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_4)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#8b5cf6" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#8b5cf6" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#a78bfa" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#05</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#8b5cf6" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#8b5cf6" opacity="0.12"/>
+        <text x="0" y="6" fill="#a78bfa" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">PH</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Pongsathon Hengsuwan</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#8b5cf6" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#8b5cf6"/>
+        <text x="98" y="16.5" fill="#a78bfa" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66313272</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">GAMEPLAY LOGIC DEV</text>
+    </g>
+
+    <!-- Card #06: Natthaset Sriglad -->
+    <g transform="translate(332, 288)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#3b82f6" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_5)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#3b82f6" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#3b82f6" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#60a5fa" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#06</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#3b82f6" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#3b82f6" opacity="0.12"/>
+        <text x="0" y="6" fill="#60a5fa" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">NS</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Natthaset Sriglad</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#3b82f6" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#3b82f6"/>
+        <text x="98" y="16.5" fill="#60a5fa" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66311889</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">BACKEND &amp; WEBSOCKET</text>
+    </g>
+
+    <!-- Card #07: Thanadet Suksomphong -->
+    <g transform="translate(608, 288)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#f97316" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_6)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#f97316" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#fb923c" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#07</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#f97316" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#f97316" opacity="0.12"/>
+        <text x="0" y="6" fill="#fb923c" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">TS</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Thanadet Suksomphong</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#f97316" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#f97316"/>
+        <text x="98" y="16.5" fill="#fb923c" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66312206</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">DATABASE &amp; QA DEV</text>
+    </g>
+
+    <!-- Card #08: Rattanan Indee -->
+    <g transform="translate(884, 288)">
+      <!-- Glow Underlay -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#ec4899" opacity="0.04" filter="url(#glowFilter)"/>
+      
+      <!-- Card Container Box -->
+      <rect x="0" y="0" width="260" height="162" rx="14" fill="#090e1a" stroke="url(#borderGrad_7)" stroke-width="1.4"/>
+      
+      <!-- Top Accent Glow Line -->
+      <path d="M 24 0 L 236 0" stroke="#ec4899" stroke-width="2.5" stroke-linecap="round" opacity="0.9"/>
+      
+      <!-- Index Tag in Top Right -->
+      <rect x="208" y="10" width="40" height="18" rx="5" fill="#030712" stroke="#ec4899" stroke-width="0.8" opacity="0.8"/>
+      <text x="228" y="23" fill="#f472b6" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="9.5" font-weight="700" text-anchor="middle">#08</text>
+
+      <!-- Member Initials Avatar Ring -->
+      <g transform="translate(130, 44)">
+        <circle cx="0" cy="0" r="23" fill="#030712" stroke="#ec4899" stroke-width="1.8"/>
+        <circle cx="0" cy="0" r="19" fill="#ec4899" opacity="0.12"/>
+        <text x="0" y="6" fill="#f472b6" font-family="'Inter', system-ui, sans-serif" font-size="14" font-weight="900" text-anchor="middle" letter-spacing="1">RI</text>
+      </g>
+
+      <!-- Student Full Name -->
+      <text x="130" y="93" fill="#f8fafc" font-family="'Inter', system-ui, sans-serif" font-size="13.5" font-weight="800" text-anchor="middle">Rattanan Indee</text>
+
+      <!-- Student ID Capsule -->
+      <g transform="translate(42, 106)">
+        <rect x="0" y="0" width="176" height="24" rx="12" fill="#030712" stroke="#ec4899" stroke-width="1" stroke-dasharray="3,2" opacity="0.95"/>
+        <circle cx="18" cy="12" r="3.5" fill="#ec4899"/>
+        <text x="98" y="16.5" fill="#f472b6" font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="11.5" font-weight="800" text-anchor="middle" letter-spacing="1.5">66314392</text>
+      </g>
+
+      <!-- Role / Academic Tag -->
+      <text x="130" y="148" fill="#64748b" font-family="'Inter', system-ui, sans-serif" font-size="9.5" font-weight="700" text-anchor="middle" letter-spacing="1.2">UI/UX &amp; GRAPHICS DEV</text>
+    </g>
+
+</svg>

@@ -10,6 +10,34 @@
 <br/><br/>
 
 <!-- ========================================================================= -->
+<!-- ACADEMIC PROJECT SUBMISSION & CORE DEVELOPMENT TEAM ROSTER                -->
+<!-- ========================================================================= -->
+<a id="academic-project-team" href="#academic-project-team">
+  <img src="docs/assets/project-team.svg" alt="WordX Core Development Team &amp; Academic Roster" width="100%" />
+</a>
+
+<br/><br/>
+
+<details>
+  <summary><b>Academic Submission Details (รายชื่อสมาชิกกลุ่มผู้พัฒนาโครงงาน)</b></summary>
+  <br/>
+
+| No. | Full Name | Student ID | Core Specialization |
+| :---: | :--- | :---: | :--- |
+| **01** | **Thanaphat Chichu** | `66312244` | Project Lead &amp; System Architecture |
+| **02** | **Kanin Noisiri** | `66301653` | Core Engine &amp; Game Mechanics |
+| **03** | **Chanadet Leecharoen** | `66311049` | System Architect &amp; Performance |
+| **04** | **Peeraphat Rungraugwong** | `66313760` | Frontend &amp; HTML5 Canvas Compositor |
+| **05** | **Pongsathon Hengsuwan** | `66313272` | Gameplay Logic &amp; Lexicon Engine |
+| **06** | **Natthaset Sriglad** | `66311889` | Backend Services &amp; WebSocket Stream |
+| **07** | **Thanadet Suksomphong** | `66312206` | Database Architecture &amp; QA |
+| **08** | **Rattanan Indee** | `66314392` | UI/UX Design &amp; Graphics Pipeline |
+
+</details>
+
+<br/>
+
+<!-- ========================================================================= -->
 <!-- TECHNOLOGIES & STATUS BADGES MATRIX (Technologies & Status)               -->
 <!-- ========================================================================= -->
 [![Next.js](https://img.shields.io/badge/Next.js-16.3.4-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
@@ -578,24 +606,27 @@ PYTHONPATH=. pytest tests/ -v
 
 ---
 
-## Contributors & Development Team
+## Contributors & Academic Development Team
 
 <br/>
 
-<!-- Animated Core Development Crew SVG with Embedded Base64 Avatars -->
+<!-- Animated Core Development Crew SVG -->
 <div align="center">
-  <img src="docs/assets/team-banner.svg" alt="Core Development Crew" width="100%" />
+  <img src="docs/assets/team-banner.svg" alt="Core Development Crew Roster" width="100%" />
 </div>
 
 <br/>
 
 <p align="center">
-  <a href="https://github.com/Cell1991"><img src="https://img.shields.io/badge/Cell1991-Cell-f59e0b?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Cell1991" /></a>
-  <a href="https://github.com/friend47"><img src="https://img.shields.io/badge/friend47-Peerapatr-0284c7?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="friend47" /></a>
-  <a href="https://github.com/waiwaix43"><img src="https://img.shields.io/badge/waiwaix43-waiwaix43-a855f7?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="waiwaix43" /></a>
-  <a href="https://github.com/Natthaset2547"><img src="https://img.shields.io/badge/Natthaset2547-Natthaset-10b981?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Natthaset2547" /></a>
-  <a href="https://github.com/Rednoselittledog"><img src="https://img.shields.io/badge/Rednoselittledog-Kanin-f43f5e?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="Rednoselittledog" /></a>
-  <a href="https://github.com/ReFresh-bit"><img src="https://img.shields.io/badge/ReFresh--bit-ReFresh-38bdf8?style=for-the-badge&amp;logo=github&amp;logoColor=white" alt="ReFresh-bit" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/01_Thanaphat_Chichu-66312244-f59e0b?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Thanaphat Chichu 66312244" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/02_Kanin_Noisiri-66301653-f43f5e?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Kanin Noisiri 66301653" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/03_Chanadet_Leecharoen-66311049-06b6d4?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Chanadet Leecharoen 66311049" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/04_Peeraphat_Rungraugwong-66313760-10b981?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Peeraphat Rungraugwong 66313760" /></a>
+  <br/>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/05_Pongsathon_Hengsuwan-66313272-8b5cf6?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Pongsathon Hengsuwan 66313272" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/06_Natthaset_Sriglad-66311889-3b82f6?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Natthaset Sriglad 66311889" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/07_Thanadet_Suksomphong-66312206-f97316?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Thanadet Suksomphong 66312206" /></a>
+  <a href="#academic-project-team"><img src="https://img.shields.io/badge/08_Rattanan_Indee-66314392-ec4899?style=for-the-badge&amp;logo=blueprint&amp;logoColor=white" alt="Rattanan Indee 66314392" /></a>
 </p>
 
 ---
