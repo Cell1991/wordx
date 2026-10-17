@@ -10,13 +10,25 @@
 <br/><br/>
 
 <!-- ========================================================================= -->
-<!-- DEVELOPMENT TEAM ROSTER                                                   -->
+<!-- DEVELOPMENT TEAM ROSTER (Interactive Clickable Member Cards)              -->
 <!-- ========================================================================= -->
 <a>
-  <img src="docs/assets/project-team.svg" alt="Development Team Roster" width="100%" />
+  <img src="docs/assets/team-header.svg" alt="Development Team" width="100%" />
 </a>
+<p align="center">
+  <a href="https://github.com/Cell1991"><img src="docs/assets/member-01.svg" alt="01. Thanaphat Chichu (66312244)" width="24%" /></a>
+  <a href="https://github.com/Rednoselittledog"><img src="docs/assets/member-02.svg" alt="02. Kanin Noisiri (66310653)" width="24%" /></a>
+  <a href="https://github.com/waiwaix43"><img src="docs/assets/member-03.svg" alt="03. Chanadet Leecharoen (66311049)" width="24%" /></a>
+  <a href="https://github.com/friend47"><img src="docs/assets/member-04.svg" alt="04. Peeraphat Rungraugwong (66313760)" width="24%" /></a>
+</p>
+<p align="center">
+  <a href="https://github.com/Phongsatorn66"><img src="docs/assets/member-05.svg" alt="05. Pongsathon Hengsuwan (66313272)" width="24%" /></a>
+  <a href="https://github.com/Natthaset2547"><img src="docs/assets/member-06.svg" alt="06. Natthaset Sriglad (66311889)" width="24%" /></a>
+  <a href="https://github.com/ReFresh-bit"><img src="docs/assets/member-07.svg" alt="07. Thanadet Suksomphong (66312206)" width="24%" /></a>
+  <a href="https://github.com/Cell1991/wordx"><img src="docs/assets/member-08.svg" alt="08. Rattanan Indee (66314392)" width="24%" /></a>
+</p>
 
-<br/><br/>
+<br/>
 
 <!-- ========================================================================= -->
 <!-- TECHNOLOGIES & STATUS BADGES MATRIX (Technologies & Status)               -->
